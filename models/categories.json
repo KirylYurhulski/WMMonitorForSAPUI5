@@ -1,0 +1,60 @@
+ [
+	{
+		"text": "Исходящие",
+		"type": "Outbound",
+		"nodes":
+		[
+			{
+				"text": "Документы",
+				"type": "Outbound Documents",
+				"nodes":[
+					{
+						"text": "Заказ на исходящую поставку",
+						"type": "PDO headers",
+						"filename": "models/pdo/headers.json",
+						"idpanel": "idHeadersPanel",
+						"idtable": "idHeadersTable",
+						"nodes":[
+							{
+								"text": "Поз.Заказа на исход.Поставку",
+								"type": "PDO items",
+								"filename": "models/pdo/items.json",
+								"idpanel": "idItemsPanel",
+								"idtable": "idItemsTable"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"text": "Входящие",
+		"type": "Inbound",
+		"nodes":
+		[
+			{
+				"text": "Документы",
+				"type": "Inbound Documents",
+				"nodes":[
+					{
+						"text": "Входящая поставка",
+						"type": "PDI headers",
+						"filename": "models/pdi/headers.json",
+						"idpanel": "idHeadersPanel",
+						"idtable": "idHeadersTable",
+						"nodes":[
+							{
+								"text": "Позиция входящей поставки",
+								"type": "PDI items",
+								"filename": "models/pdi/items.json",
+								"idpanel": "idItemsPanel",
+								"idtable": "idItemsTable"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]
